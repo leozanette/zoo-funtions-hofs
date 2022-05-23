@@ -42,4 +42,10 @@ describe('Testes da função HandlerElephants', () => {
     const actual = handlerElephants('popularity');
     expect(actual).toStrictEqual(expected);
   });
+
+  it('parametro diferente retorna null', () => {
+    const expected = null;
+    const actual = handlerElephants('boca');
+    expect(actual).toStrictEqual(expected);
+  });
 });
